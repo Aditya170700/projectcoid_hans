@@ -27,6 +27,7 @@ class DatabaseController extends Controller
             'files', $ori[0] . '.' . end($ori)
         );
 
-        return back();
+        return redirect()->back()->with('success', 'Import and upload file successfully!');
     }
+
 }
